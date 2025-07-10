@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://gofood:pass321word@cluster0.ia28wb0.mongodb.net/gofoodMERN?retryWrites=true&w=majority';
+require('dotenv').config();
+const mongoURI = process.env.MONGO_URI;
 // const mongoDB = async() => {
 // await mongoose.connect(mongoURI,{useNewUrlParser: true}, async(err,result) => {
 //     if (err) console.log('-----',err);
